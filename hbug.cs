@@ -1,7 +1,16 @@
 using System;
 using System.Data.SqlClient;
 
-class LoginService
+def your_function(param):
+"""One-line summary.
+
+Args:
+param: Description.
+
+Returns:
+Description of return value.
+"""
+pass
 {
     public bool Login(string username, string password)
     {
