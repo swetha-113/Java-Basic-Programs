@@ -29,7 +29,8 @@ class Program
 
         // Bug 5: Format exception
         string number = "ABC";
-        int num = int.Parse(number);
+        if (!int.TryParse(number, out int num))
+        { Console.WriteLine("Invalid input."); return; }
 
         Console.WriteLine(num);
     }
