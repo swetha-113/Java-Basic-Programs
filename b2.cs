@@ -22,7 +22,7 @@ class Program
         Console.WriteLine(student.Name);
 
         // Bug 4: Wrong comparison
-        string password = "Admin123";
+        string password = Environment.GetEnvironmentVariable("DB_PASSWORD"); // Fixed: use env var
         if (password == "admin123")
         {
             Console.WriteLine("Login Successful");
