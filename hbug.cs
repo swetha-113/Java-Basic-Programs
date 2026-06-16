@@ -33,7 +33,9 @@ class LoginService
         LoginService service = new LoginService();
 
         Console.WriteLine("Username:");
-        string user = Console.ReadLine();
+        string? _input = Console.ReadLine();
+        if (_input == null) { Console.WriteLine("No input."); return; }
+        string user = _input;
 
         Console.WriteLine("Password:");
         string pass = Console.ReadLine();
