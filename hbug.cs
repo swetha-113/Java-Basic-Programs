@@ -44,6 +44,8 @@ pass
         Console.WriteLine("Username:");
         string? _input = Console.ReadLine();
         if (_input == null) { Console.WriteLine("No input."); return; }
+        string? _input = _input;
+        if (_input == null) { Console.WriteLine("No input."); return; }
         string user = _input;
 
         Console.WriteLine("Password:");
