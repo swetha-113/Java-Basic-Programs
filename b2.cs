@@ -14,7 +14,8 @@ class Program
 
         // Bug 2: Division by zero
         int totalStudents = 0;
-        double average = 100 / totalStudents;
+        if (totalStudents == 0) { Console.WriteLine("Cannot divide by zero."); return; }
+        double average = 100 / totalStudents;  // safe: zero-checked above
         Console.WriteLine("Average: " + average);
 
         // Bug 3: Null reference
