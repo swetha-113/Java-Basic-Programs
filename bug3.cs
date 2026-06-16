@@ -23,7 +23,8 @@ class Program
 
         // Bug 4: Format exception
         string input = "12A";
-        int number = Convert.ToInt32(input);
+        if (!int.TryParse(input, out int number))
+        { Console.WriteLine("Invalid input."); return; }
 
         // Bug 5: Logic error
         int marks = 40;
